@@ -209,6 +209,24 @@ body::before {
   margin-left: 1rem;
 }
 
+.poster {
+  border-radius: 1rem;
+  height: 265px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top center;
+  width: 90%;
+}
+
+.trailer-container {
+  width: min(100%, 560px);
+  height: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem; 
+  overflow: hidden
+}
+
 /**** animation ****/
 .scale-on-hover {
   transition: transform 500ms;
@@ -308,5 +326,18 @@ body::before {
   .time,
   .separation {
     display: none;
+  }
+
+  .header__info {
+    flex-direction: column;
+    margin-top: 1.25rem;
+  }
+
+  .poster {
+    height: auto;
+  }
+
+  .trailer-container {
+    height: 215px;
   }
 }
